@@ -1,0 +1,1134 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  height: 100%;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:regular,500,700);
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Red Hat Display";
+  line-height: 1px;
+  font-size: 16px;
+  height: 100%;
+  color: white;
+  background-color: #f2f2f2;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+/*-----------------------Шапка-------------------------*/
+.container {
+  max-width: 1440px;
+  padding: 0px 0px;
+  margin: 0px auto;
+  box-sizing: content-box;
+}
+
+.ibg {
+  position: relative;
+}
+.ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.header_container {
+  display: flex;
+  min-height: 80px;
+  align-items: center;
+  justify-items: center;
+}
+.header_logo {
+  font-size: 18px;
+  font-weight: 500;
+  color: beige;
+  text-decoration: none;
+  margin-left: 150px;
+}
+.header_menu {
+  margin: 0px 0px 0px 600px;
+}
+@media (max-width: 700px) {
+  .header_logo {
+    margin: 0px 0px 0px 5px;
+  }
+}
+@media (max-width: 1040px) {
+  .header_menu {
+    margin: 0px 0px 0px 300px;
+  }
+}
+@media (max-width: 940px) {
+  .header_menu {
+    margin: 0px 0px 0px 150px;
+  }
+}
+
+@media (max-width: 790px) {
+  .header_menu {
+    margin: 0px 0px 0px 50px;
+  }
+}
+.menu {
+  padding: 5px;
+}
+.menu_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu_item {
+  margin: 0px 0px 0px 32px;
+}
+.last_nav {
+  flex-wrap: wrap;
+  margin: 5 auto;
+  margin-right: 0;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  padding: 15px 18px;
+}
+@media (max-width: 1350px) {
+  .last_nav {
+    border: none;
+  }
+}
+
+.menu_link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+/*-----------------------Страница-------------------------*/
+.page {
+  flex: 1 1 auto;
+}
+
+.page_main-block {
+}
+.page_feature {
+}
+.page_content {
+}
+.page_testimonials {
+}
+.page_persons {
+}
+.page_faq {
+}
+/*-----------------------Main-block-------------------------*/
+
+.main-block {
+  position: relative;
+}
+.main-block_conteiner {
+  width: 1100px;
+  height: 1056px;
+  margin: 0 auto;
+}
+.main-block_body {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+}
+.main-block_title {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Red Hat Display";
+  max-width: 587px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 125%;
+  margin-bottom: 40px;
+  padding-top: 160px;
+}
+
+.main-block_buttons {
+  display: flex;
+  justify-content: center;
+}
+.main-block_button {
+  margin: 7px;
+}
+.main-block_img {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 144px;
+  width: 333px;
+  height: 530px;
+  overflow: hidden;
+}
+.main-block_image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.oval {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 1108px;
+  max-height: 1108px;
+  border-radius: 50%;
+  top: 650px;
+  left: 10%;
+
+  margin: 0 auto;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.0001) 39.96%
+  );
+  mix-blend-mode: normal;
+  opacity: 0.1;
+}
+
+@media (max-width: 1100px) {
+  .main-block_conteiner {
+    width: 800px;
+    height: 1056px;
+    margin: 0 auto;
+    margin: 0px 0px 0px 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-block_conteiner {
+    width: 500px;
+    height: 1056px;
+    margin: 0 auto;
+    margin: 0px 0px 0px 10px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .oval {
+    left: 5%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .oval {
+    left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .main-block_title {
+    display: flex;
+    margin: 0px 5px 0px 100px;
+    text-align: center;
+    font-family: "Red Hat Display";
+    max-width: 290px;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-block_buttons {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+
+/*-------------------feature----------------*/
+
+.feature {
+  position: absolute;
+  width: 1440px;
+  height: 500px;
+}
+.feature_container {
+  margin-top: 100px;
+  display: flex;
+  width: 1440px;
+  background-color: #ffffff;
+}
+
+.feature_body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 100px 150px 0px 150px;
+  flex-wrap: wrap;
+  gap: 108px;
+}
+.feature_text_container {
+  display: flex;
+  width: 1143px;
+  height: 100px;
+  gap: 300px;
+}
+.feature_title {
+  width: 489px;
+  height: 100px;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+  color: #14171d;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 125%;
+}
+.feature_body_text {
+  width: 361px;
+  height: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #606267;
+}
+
+.feature_column {
+  display: flex;
+  width: 300px;
+  margin-bottom: 100px;
+}
+.column_item {
+}
+.item-feature {
+}
+.item-feature > *:not(:last-child) {
+  margin: 0px 0px 16px 0px;
+}
+.color_text {
+  color: #44a0ff;
+}
+.item_feature_icon {
+}
+.item_feature_title {
+  text-align: left;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #14171d;
+}
+.item_feature_text {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #606267;
+}
+
+/*-----------------------content-------------------------*/
+
+.content {
+  position: absolute;
+  width: 1440px;
+  height: 991px;
+}
+.content_container {
+  margin-top: 800px;
+  display: flex;
+  width: 1440px;
+  background-color: #ffffff;
+}
+.content_body {
+  display: flex;
+  justify-content: center;
+  margin: 100px 150px 100px 150px;
+  flex-wrap: wrap;
+}
+.content_title {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 125%;
+  color: #14171d;
+  padding-bottom: 40px;
+}
+.content_column {
+  display: flex;
+  flex-flow: row wrap;
+}
+.content_active {
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  width: 361px;
+  height: 137px;
+  margin-bottom: 80px;
+}
+.content_left {
+  width: 361px;
+  height: 507px;
+  left: 150px;
+  top: 291px;
+  margin-top: 90px;
+}
+.content_img {
+  padding: 40px;
+}
+.content_right {
+  width: 361px;
+  height: 485px;
+  left: 930px;
+  top: 313px;
+  margin-top: 90px;
+}
+.content_item_title {
+  margin: 0px 0px 0px 68px;
+  display: flex;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: right;
+  color: #14171d;
+}
+.content_item_text {
+  margin: 13px 69px 118px 68px;
+  display: flex;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #606267;
+}
+
+/*-----------------------testimonials--------------*/
+
+.testimonials {
+  position: absolute;
+  width: 100%;
+  max-width: 1440px;
+}
+.testimonials_container {
+  position: absolute;
+  margin-top: 100px;
+  display: flex;
+  width: 1440px;
+  background-color: #ffffff;
+}
+.testimonials_body {
+  display: flex;
+  width: 1100px;
+  justify-content: center;
+  margin: 100px 150px 100px 150px;
+  flex-wrap: wrap;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+}
+.testimonials_little_title {
+  display: flex;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 125%;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0px 100px 0px 100px;
+  color: #14171d;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonials_title {
+  display: flex;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 125%;
+  text-align: center;
+  padding: 16px 80px 56px 80px;
+  color: #14171d;
+  justify-content: center;
+}
+.testimonials_cards {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0px 0px 0px 0px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.card_item {
+  width: 361px;
+  height: 500px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.item-testimonials {
+  width: 361px;
+  height: 500px;
+  margin: 0px 32px 0px 32px;
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.bg-color {
+  background: #44a0ff;
+  border-radius: 5px;
+}
+
+.center_card {
+  padding: 32px 32px 0px 32px;
+}
+
+.item_tesimonials_title {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+
+  color: #14171d;
+}
+.item_testimonials_name {
+  padding: 85px 0px 0px 0px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+
+  color: #14171d;
+}
+.grad {
+  position: absolute;
+  padding: 400px 3px 0px 3px;
+  display: flex;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+
+  color: #ffffff;
+  z-index: 999;
+}
+
+.grad-pad {
+  padding: 0px 48px 0px 32px;
+}
+.item_testimonials_text {
+  padding: 4px 0px 0px 0px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #606267;
+}
+.testimonials_link {
+  padding: 16px 0px 0px 0px;
+}
+
+/*-------------------person-------------*/
+
+.persons {
+  position: absolute;
+  width: 100%;
+  height: 337px;
+  max-width: 1440px;
+}
+.persons_container {
+  position: absolute;
+  margin-top: 1000px;
+  display: flex;
+  width: 1440px;
+  background-color: #ffffff;
+}
+.persons_body {
+  display: flex;
+  width: 1100px;
+  justify-content: center;
+  margin: 100px 150px 100px 150px;
+  flex-wrap: wrap;
+}
+.persons_cards {
+  display: flex;
+  gap: 28px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+.person_card1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 556px;
+  height: 137px;
+}
+.person_card2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 556px;
+  height: 137px;
+}
+.card_comment {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  width: 1100px;
+  height: 60px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.comment_text {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 420px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #14171d;
+}
+.comment_data {
+  display: flex;
+  width: 200px;
+  margin: 30px 28px 0px 90px;
+}
+.comment_img {
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+.comment_contant {
+  display: flex;
+  position: absolute;
+  margin: 0px 0px 0px 56px;
+  padding: 0px 0px 0px 0px;
+  gap: 2px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.comment_name {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #14171d;
+}
+.comment_desing {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #606267;
+}
+
+.card_photo {
+  display: flex;
+  position: relative;
+  max-width: 28px;
+  max-height: 20px;
+}
+
+/*-----------------------faq-------------------------*/
+
+.faq {
+  position: absolute;
+  width: 100%;
+  max-width: 1440px;
+}
+.faq_container {
+  position: absolute;
+  margin-top: 1400px;
+  display: flex;
+  width: 1440px;
+  background-color: #ffffff;
+}
+.faq_body {
+  display: flex;
+  width: 1100px;
+  height: 950px;
+  justify-content: center;
+  margin: 100px 334px 100px 247px;
+  flex-wrap: wrap;
+}
+
+.faq_item {
+  position: absolute;
+  margin-top: 148px;
+}
+/*-------------------------------------------*/
+.details {
+  background: #ffffff;
+}
+.summary {
+  margin: 24px 24px 24px 24px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #14171d;
+}
+.faq_text {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #606267;
+}
+/*-------------------------------------------*/
+details {
+  display: block;
+  background: #fff;
+  width: 850px;
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::-moz-list-bullet {
+  list-style-type: none;
+}
+summary::marker {
+  display: none;
+}
+summary {
+  display: block;
+  font-size: 1.4em;
+  cursor: pointer;
+  position: relative;
+}
+summary:before {
+  top: 0.4em;
+  right: 0.3em;
+  color: transparent;
+  background: url("/img/arrow-drop-down-48pxicon.svg") no-repeat 50% 50% / 1em
+    1em;
+  width: 1em;
+  height: 1em;
+  content: "";
+  position: absolute;
+  transition: transform 0.5s;
+}
+details[open] > summary:before {
+  transform: scale(1, -1);
+}
+summary ~ * {
+  padding: 0 1em 10px 24px;
+}
+details[open] summary ~ * {
+  animation: sweep 0.5s ease-in-out;
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+summary:focus {
+  outline: 0;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1300px) {
+  .feature_body {
+    margin: 100px 150px 0px 50px;
+    gap: 60px;
+  }
+  .feature_text_container {
+    gap: 100px;
+  }
+  .feature_body {
+    justify-content: flex-start;
+  }
+  .content_img {
+    padding: 20px;
+}
+  .feature_column {
+    width: 275px;
+  }
+  .content_body {
+    margin: 100px 160px 100px 0px;
+  }
+  .testimonials_body {
+    margin: 100px 150px 100px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .persons_body {
+    width: 1024px;
+    margin: 100px 150px 100px 20px;
+  }
+  .faq_body {
+    margin: 100px 334px 100px 150px;
+  }
+  .content_body{
+    width: 900px;
+    
+  }
+  .testimonials_body{
+    width: 1100px;
+  }
+  .testimonials_cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .persons_container{
+    margin-top: 2000px;
+  }
+  .faq_container{
+    margin-top: 2500px;
+  }
+  .faq_body {
+    width: 900px;
+    margin: 100px 334px 100px 74px;
+}
+}
+
+@media (max-width: 768px) {
+  .content_body {
+    margin: 104px 173px 108px 64px;
+  }
+  .content_body {
+    display: flex;
+    margin-left: 50px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+  }
+  .content_container {
+    margin-top: 950px;
+  }
+
+  .feature_text_container {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-bottom: 85px;
+  }
+  .feature_column {
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+    margin-top: 66px;
+  }
+  .content_column {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .content_item_text {
+    margin: 10px 0px 40px 60px;
+  }
+
+  .content_left {
+    width: 700px;
+    height: 370px;
+  }
+  .content_right {
+    margin-top: 0px;
+    width: 700px;
+    height: 200px;
+  }
+  .content_img {
+    margin-left: 100px;
+  }
+  .content_active {
+    width: 700px;
+  }
+
+  .testimonials_body {
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    margin: 100px 150px 100px 50px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .testimonials_cards {
+    flex-direction: column;
+  }
+  .persons_container {
+    margin-top: 2000px;
+  }
+  .faq_container {
+    position: absolute;
+    margin-top: 2399px;
+  }
+
+  .persons_body {
+    width: 642px;
+  }
+
+  .persons_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .faq_container {
+    position: absolute;
+    margin-top: 2638px;
+  }
+  .faq_body {
+    margin: 60px 0px 0px 0px;
+    width: 760px;
+  }
+  .testimonials_title {
+    font-size: 36px;
+  }
+  details {
+    width: 551px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature_body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .feature_column {
+    width: 345px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .feature_title {
+    font-size: 24px;
+    width: 315px;
+  }
+  .content_body{
+    margin: 60px 0px 108px 20px;
+  }
+  .content_left{
+    width: 300px;
+  }
+  .content_right{
+    width: 300px;
+    height: 370px;
+  }
+  .content_active {
+    width: 300px;
+  }
+  .content_container {
+    margin-top: 1200px;
+  }
+  .content_img {
+    padding-top: 146px;
+    margin-left: 0px;
+  }
+  
+  .content_column {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .content_title {
+    width: 377px;
+  }
+  .persons_body {
+    width: 302px;
+}
+.comment_text {
+
+  width: 300px;
+  }
+
+  .testimonials_container{
+    width: 480px;
+  }
+  .testimonials_body {
+    display: flex;
+    width: 357px;}
+    .persons_body{
+      width: 357px;
+    }
+    .faq_body{
+      width: 480px;
+    }
+   
+    details {
+      width: 380px;
+  }
+    
+}
